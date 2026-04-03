@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://kfwi3ifcup1c"]
+
+[ext_resource type="Script" uid="uid://bbx7duw6qxyr7" path="res://link_button.gd" id="1_ulig0"]
+
+[node name="ColorRect" type="ColorRect" unique_id=48892648]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.7166667, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=702502125]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 49.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=2021400338]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "IT'S BLINDING IT'S BLDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLIN'T'S BLINDING IT'S BLIING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IT'S BLINDING IBLINDING IT'S BLINDING "
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=285129162]
+layout_mode = 2
+alignment = 1
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/HBoxContainer" unique_id=931692540]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "IT'S BLINDING ME"
+script = ExtResource("1_ulig0")
+sceneName = "Level"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/LinkButton" to="VBoxContainer/HBoxContainer/LinkButton" method="_on_pressed"]

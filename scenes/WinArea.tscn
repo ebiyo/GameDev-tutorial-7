@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://mtf2d7vecpne"]
+
+[ext_resource type="Script" uid="uid://ctiufrb41xgrb" path="res://WinArea.gd" id="1_f67vg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0cone"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ftehc"]
+
+[node name="WinArea" type="Area3D" unique_id=474836027]
+script = ExtResource("1_f67vg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1312602634]
+shape = SubResource("SphereShape3D_0cone")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="." unique_id=1021331220]
+visible = false
+mesh = SubResource("SphereMesh_ftehc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

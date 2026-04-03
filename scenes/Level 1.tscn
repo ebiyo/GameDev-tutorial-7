@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3bj4q2hq3e2l"]
+
+[ext_resource type="PackedScene" uid="uid://bjvvc4yryfqdq" path="res://scenes/Player.tscn" id="1_ymo8b"]
+[ext_resource type="PackedScene" uid="uid://dltqory4o1xju" path="res://scenes/World 1.tscn" id="2_gpsl1"]
+[ext_resource type="PackedScene" uid="uid://mtf2d7vecpne" path="res://scenes/WinArea.tscn" id="3_gpsl1"]
+
+[node name="Level 1" type="Node3D" unique_id=1784103079]
+
+[node name="Player" parent="." unique_id=600305602 instance=ExtResource("1_ymo8b")]
+
+[node name="World 1" parent="." unique_id=1090021500 instance=ExtResource("2_gpsl1")]
+
+[node name="WinArea" parent="." unique_id=474836027 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -3, 36)
+sceneName = "WinScreen"
+
+[node name="LoseArea" parent="." unique_id=526496667 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 0, -13.942942, 12.209263)
+
+[editable path="LoseArea"]
